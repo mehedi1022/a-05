@@ -11,9 +11,14 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4430424a0a.js" crossorigin="anonymous"></script>
+    <!-- css tag  -->
     <style>
-        .font{
+        .font {
             font-family: "Raleway", sans-serif;
         }
     </style>
@@ -23,30 +28,269 @@
 <body>
 
     <header>
-
+        <nav class="flex justify-between mx-auto container px-24 pt-10 pb-14">
+            <div>
+                <h1 class="text-center text-gray-950 text-4xl font-extrabold font-['R aleway']">P-Ticket</h1>
+            </div>
+            <div>
+                <ul class="flex space-x-14">
+                    <li class="text-center text-gray-950/70 text-lg font-medium font-['Raleway']">Home</li>
+                    <li class="text-center text-gray-950/70 text-lg font-medium font-['Raleway']">About</li>
+                    <li class="text-center text-gray-950/70 text-lg font-medium font-['Raleway']">Destination</li>
+                    <li class="text-center text-gray-950/70 text-lg font-medium font-['Raleway']">Search</li>
+                </ul>
+            </div>
+            <div
+                class="h-14 px-[30px] py-4 bg-[#1dd100]/10 rounded-xl border border-[#1dd100]/40 justify-center items-center gap-2.5 inline-flex">
+                <button class="text-center text-[#1dd100] text-xl font-bold font-['Raleway'] flex space-x-3">
+                    <p>Bus</p>
+                    <img src="./img/bus-icon.png" alt="">
+                </button>
+            </div>
+        </nav>
     </header>
 
     <main>
+        <!-- banner section  -->
+        <section>
+            <div class="mx-auto container px-24">
 
+                <div class="relative">
+                    <img src="./img/banner.png" class="w-full h-full object-cover rounded-2xl"
+                        alt="Your Image Description">
+                    <div class="absolute top-20 left-0">
+                        <h2 class="text-white
+                  text-[64px]
+                  font-extrabold
+                  font-['Raleway'] text-center ">End-to-End Travel with <span class="text-[#1dd100]
+                  text-[64px]
+                  font-extrabold
+                  font-['Raleway']
+                  leading-[86px]"><br>P Paribahan</span></h2>
+                        <p class=" text-center text-white text-lg  font-['Inter'] w-1/2 ml-[320px] mt-4 mb-9">
+                            Yes, you can run unit tests and view the results directly within the app. The integrated
+                            testing features allow for a streamlined .</p>
+                        <button
+                            class="btn bg-[#1dd100] text-gray-950 text-xl font-bold font-['Raleway'] px-5 rounded-xl border-none h-[65px] px-[30px] items-center ml-[600px]">Buy
+                            Tickets</button>
+                    </div>
+                    <div
+                        class="absolute top-[560px] left-[150px] text-center flex items-center justify-center space-x-12">
+                        <div
+                            class="w-[308px] h-[138px] bg-white rounded-3xl border-b-4 border-[#1dd100] flex items-center text-center justify-center space-x-3 ">
+                            <div>
+                                <img class="" src="./img/people.png" alt="">
+                            </div>
+                            <div>
+                                <h2 class="text-center text-gray-950 text-4xl font-bold font-['Inter']">500K+</h2>
+                                <p class="text-gray-950/60 text-lg font-normal font-['Inter']">Registered users</p>
+                            </div>
+
+                        </div>
+                        <div
+                            class="w-[308px] h-[138px] bg-white rounded-3xl border-b-4 border-[#1dd100] flex items-center text-center justify-center space-x-3 ">
+                            <div>
+                                <img class="" src="./img/ticket-cupon.png" alt="">
+                            </div>
+                            <div>
+                                <h2 class="text-center text-gray-950 text-4xl font-bold font-['Inter']">1.7 lacks</h2>
+                                <p class="text-gray-950/60 text-lg font-normal font-['Inter']">Tickets sold</p>
+                            </div>
+
+                        </div>
+                        <div
+                            class="w-[308px] h-[138px] bg-white rounded-3xl border-b-4 border-[#1dd100] flex items-center text-center justify-center space-x-3 ">
+                            <div>
+                                <img class="" src="./img/stoppage.png" alt="">
+                            </div>
+                            <div>
+                                <h2 class="text-center text-gray-950 text-4xl font-bold font-['Inter']">80K+</h2>
+                                <p class="text-gray-950/60 text-lg font-normal font-['Inter']">Rental partners</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- offer section  -->
+        <section>
+            <div class="mx-auto container px-24 py-40">
+                <div>
+                    <h2 class="text-center text-gray-950 text-[40px] font-bold font-['Raleway']">Best offers for you
+                    </h2>
+                </div>
+                <div class="flex justify-between my-[50px]">
+                    <div class="w-[600px] h-[220px] bg-[#ffbf0f] rounded-3xl flex justify-evenly items-center relative">
+                        <div>
+                            <img src="./img/cupon-devider.png" alt="" class="absolute top-0 left-[310px]">
+                            <h2 class="text-gray-950/80 text-[40px] font-black font-['Inter'] leading-9">15% OFF</h2>
+                            <h4 class="text-gray-950/80 text-xl font-semibold font-['Inter'] leading-9">on your next
+                                purchase</h4>
+                            <p class="text-gray-950/50 text-lg font-medium font-['Inter'] leading-9">use by January 2024
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">NEW15
+                            </h2>
+                            <p class="text-gray-950/40 text-xl font-medium font-['Raleway'] leading-9">Coupon Code</p>
+                        </div>
+                    </div>
+                    <div class="w-[600px] h-[220px] bg-[#f78c9c] rounded-3xl flex justify-evenly items-center relative">
+                        <div>
+                            <img src="./img/cupon-devider.png" alt="" class="absolute top-0 left-[310px]">
+                            <h2 class="text-gray-950/80 text-[40px] font-black font-['Inter'] leading-9">20% OFF</h2>
+                            <h4 class="text-gray-950/80 text-xl font-semibold font-['Inter'] leading-9">on your next
+                                purchase</h4>
+                            <p class="text-gray-950/50 text-lg font-medium font-['Inter'] leading-9">use by January 2024
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">Couple 20
+                            </h2>
+                            <p class="text-gray-950/40 text-xl font-medium font-['Raleway'] leading-9">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button
+                        class="btn h-[65px] px-[30px] py-[21px] rounded-xl border border-[#1dd100] justify-center items-center bg-white text-center text-[#1dd100] text-xl font-bold font-['Raleway'] ml-[575px]">See
+                        All Offers</button>
+                </div>
+            </div>
+        </section>
+        <!-- paribahan section -->
+        <section>
+            <div class="w-full h-[2208px] bg-[#f7f8f8] rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-[#1dd100]">
+                <div class="mx-auto container px-24 py-40">
+                    <div>
+                        <h2 class="text-center text-gray-950 text-[40px] font-bold font-['Raleway']">P.H Paribahan</h2>
+                        <p
+                            class="mt-6 mb-12 text-center text-gray-950/60 text-lg font-normal font-['Inter'] leading-[30px]">
+                            Yes,
+                            you can run unit tests and view the results directly within the app. The integrated <br>
+                            testing features allow for a streamlined .</p>
+                    </div>
+                    <div class="flex mb-8 bg-white rounded-3xl p-8 justify-between items-center relative">
+                        <div>
+                            <div class="flex justify-between">
+                                <div class="flex space-x-4">
+                                    <div>
+                                        <img src="./img/bus-logo.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-center text-gray-950 text-[32px] font-bold font-['Raleway']">
+                                            Greenline Paribahan</h3>
+                                        <p class="text-gray-950/60 text-lg font-normal font-['Inter']">Coach-009-WEB !
+                                            AC_Business</p>
+                                    </div>
+
+                                </div>
+                                <div
+                                    class="space-x-2 flex w-[180px] h-14 bg-[#1dd100]/20 rounded-xl items-center justify-center">
+                                    <div>
+                                        <img src="./img/seat-green.png" alt="">
+                                    </div>
+
+                                    <h3 class="text-[#1dd100] text-lg font-medium font-['Inter']">40 Seats left</h3>
+                                </div>
+                            </div>
+                            <div class="w-[808px] h-[258px] bg-[#f7f8f8] rounded-3xl p-8 space-y-5">
+                                <div class="flex justify-between">
+                                    <p class="text-gray-950/60 text-lg font-semibold font-['Raleway']">Route</p>
+                                    <p class="text-gray-950 text-lg font-semibold font-['Raleway']">Dhaka - Sylhet</p>
+
+                                </div>
+                                <hr class="border border-dashed border-gray-950/20">
+                                <div class="flex justify-between">
+                                    <p class="text-gray-950/60 text-lg font-semibold font-['Raleway']">Departure Time
+                                    </p>
+                                    <p class="text-gray-950 text-lg font-semibold font-['Raleway']">9:00 PM</p>
+
+                                </div>
+                                <hr class="border border-dashed border-gray-950/20">
+                                <div class="flex justify-between">
+                                    <p
+                                        class="text-center p-4 w-[232px] h-14 bg-gray-950/5 rounded-xl text-gray-950/80 text-base font-medium font-['Inter']">
+                                        Boarding Point - Laxmipur</p>
+                                    <p
+                                        class="text-center p-4 w-[232px] h-14 bg-gray-950/5 rounded-xl text-gray-950/80 text-base font-medium font-['Inter']">
+                                        Dropping Point - Bogura</p>
+                                    <p
+                                        class="text-center p-4 w-[232px] h-14 bg-gray-950/5 rounded-xl text-gray-950/80 text-base font-medium font-['Inter']">
+                                        Est. Time - 11 Hour</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute top-[55px] right-[80px] w-[292px] h-[0px] origin-top-left rotate-90 border-2 border-dashed border-[#1dd100]">
+                        </div>
+                        <div>
+                            <img src="./img/up.png" alt="" class="absolute top-0 right-[335px]">
+                            <img src="./img/down.png" alt="" class="absolute bottom-0 right-[335px]">
+                        </div>
+                        <div class="text-center mr-[80px]">
+                            <div>
+                                <img src="./img/fare.png" alt="" class="inline-flex">
+                            </div>
+
+                            <h2 class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-10">550 Taka</h2>
+                            <p class="text-gray-950/60 text-2xl font-semibold font-['Raleway'] leading-10">Per Seat</p>
+                        </div>
+                    </div>
+                    <!-- select your seat  -->
+                    <div class="flex bg-white rounded-3xl p-8">
+                        <div>
+                            <div>
+                                <h3>Select Your Seat</h3>
+                            </div>
+                            <div class="flex border border-red-800">
+                                <div>
+                                    <img src="./img/seat-gray.png" alt="">
+                                    <p>Available</p>
+                                </div>
+                                <div>
+                                    <img src="./img/seat-green-filled.png" alt="">
+                                    <p>Selected</p>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer section  -->
     <footer class="bg-black">
-        <div class="px-40 my-40">
+        <div class="mx-auto container px-24 py-40 mb-40">
             <div class="flex justify-between">
                 <div>
                     <h2 class=" text-white text-4xl font-extrabold font-['Raleway']">P-Ticket</h2>
-                    <p class="w-[374px] text-white/80 text-lg font-normal font-['Inter'] mt-3">P-Ticket is a digital platform to make your daily commuting better.</p>
+                    <p class="w-[374px] text-white/80 text-lg font-normal font-['Inter'] mt-3">P-Ticket is a digital
+                        platform to make your daily commuting better.</p>
                 </div>
                 <div>
                     <h3 class=" text-white text-xl font-semibold font-['Raleway']">Download our app</h3>
                     <img class="mt-3" src="./img/google-play.png" alt="">
                 </div>
             </div>
-            <hr class="border border-dashed border-white/30 my-5">
+            <hr class="border border-dashed border-white/30 my-8">
             <div class="flex justify-between">
                 <div>
-                    <p class="text-white/70 text-base font-normal font-['Inter']">@all rights reserved, P-Ticket services limited.2024</p>
+                    <p class="text-white/70 text-base font-normal font-['Inter']">@all rights reserved, P-Ticket
+                        services limited.2024</p>
                 </div>
                 <div class="flex space-x-12">
                     <p class="text-white text-base font-medium font-['Inter']">Terms & condition</p>
