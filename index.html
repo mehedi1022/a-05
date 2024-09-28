@@ -241,30 +241,327 @@
                         </div>
                     </div>
                     <!-- select your seat  -->
-                    <div class="flex bg-white rounded-3xl p-8">
-                        <div>
+                    <div class="flex justify-between bg-white rounded-3xl p-8 relative">
+                        <div class="">
                             <div>
-                                <h3>Select Your Seat</h3>
+                                <h3 class="text-gray-950 text-2xl font-semibold font-['Raleway']">Select Your Seat</h3>
                             </div>
-                            <div class="flex border border-red-800">
-                                <div>
+                            <hr class="w-[609px] h-[0px] border border-dashed border-gray-950/20 my-5">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
                                     <img src="./img/seat-gray.png" alt="">
-                                    <p>Available</p>
+                                    <p class="text-gray-950/50 text-lg font-medium font-['Inter']">Available</p>
                                 </div>
-                                <div>
+                                <div class="flex items-center">
                                     <img src="./img/seat-green-filled.png" alt="">
-                                    <p>Selected</p>
+                                    <p class="text-[#1dd100] text-lg font-medium font-['Inter']">Selected</p>
                                 </div>
                             </div>
-                            <div>
-
+                            <hr class="w-[609px] h-[0px] border border-dashed border-gray-950/20 my-5">
+                            <div
+                                class="w-[110px] h-14 bg-gray-950/10 rounded-xl flex justify-center items-center ml-auto">
+                                <img src="./img/driver.png" alt="">
                             </div>
-                            <div>
+                            <div class="mt-5">
+                                <div class="flex items-center justify-center space-x-6 space-y-5">
 
+                                    <div>
+                                        <h4 class="text-gray-950/50 text-lg font-medium font-['Inter']">A</h4>
+                                    </div>
+
+                                    <div class="flex space-x-16">
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">A1</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">A2</button>
+                                        </div>
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">A3</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">A4</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="flex items-center space-x-6 space-y-5">
+
+                                    <div>
+                                        <h4 class="text-gray-950/50 text-lg font-medium font-['Inter']">B</h4>
+                                    </div>
+
+                                    <div class="flex space-x-16">
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">B1</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">B2</button>
+                                        </div>
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">B3</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">B4</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="flex items-center space-x-6 space-y-5">
+
+                                    <div>
+                                        <h4 class="text-gray-950/50 text-lg font-medium font-['Inter']">C</h4>
+                                    </div>
+
+                                    <div class="flex space-x-16">
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">C1</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">C2</button>
+                                        </div>
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">C3</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">C4</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="flex items-center space-x-6 space-y-5">
+
+                                    <div>
+                                        <h4 class="text-gray-950/50 text-lg font-medium font-['Inter']">D</h4>
+                                    </div>
+
+                                    <div class="flex space-x-16">
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">D1</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">D2</button>
+                                        </div>
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">D3</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">D4</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="flex items-center space-x-6 space-y-5">
+
+                                    <div>
+                                        <h4 class="text-gray-950/50 text-lg font-medium font-['Inter']">E</h4>
+                                    </div>
+
+                                    <div class="flex space-x-16">
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">E1</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">E2</button>
+                                        </div>
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">E3</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">E4</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="flex items-center space-x-6 space-y-5">
+
+                                    <div>
+                                        <h4 class="text-gray-950/50 text-lg font-medium font-['Inter']">F</h4>
+                                    </div>
+
+                                    <div class="flex space-x-16">
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">F1</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">F2</button>
+                                        </div>
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">F3</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">F4</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="flex items-center space-x-6 space-y-5">
+
+                                    <div>
+                                        <h4 class="text-gray-950/50 text-lg font-medium font-['Inter']">G</h4>
+                                    </div>
+
+                                    <div class="flex space-x-16">
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">G1</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">G2</button>
+                                        </div>
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">G3</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">G4</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="flex items-center space-x-6 space-y-5">
+
+                                    <div>
+                                        <h4 class="text-gray-950/50 text-lg font-medium font-['Inter']">H</h4>
+                                    </div>
+
+                                    <div class="flex space-x-16">
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">H1</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">H2</button>
+                                        </div>
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">H3</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">H4</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="flex items-center space-x-6 space-y-5 ml-2">
+
+                                    <div>
+                                        <h4 class="text-gray-950/50 text-lg font-medium font-['Inter']">I</h4>
+                                    </div>
+
+                                    <div class="flex space-x-16">
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">I1</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">I2</button>
+                                        </div>
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">I3</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">I4</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="flex items-center space-x-6 space-y-5">
+
+                                    <div>
+                                        <h4 class="text-gray-950/50 text-lg font-medium font-['Inter']">J</h4>
+                                    </div>
+
+                                    <div class="flex space-x-16">
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">J1</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">J2</button>
+                                        </div>
+                                        <div class="space-x-8">
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">J3</button>
+                                            <button
+                                                class="text-gray-950/50 text-lg font-medium font-['Inter'] w-[110px] h-14 bg-[#f7f8f8] rounded-xl">J4</button>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
+                        <hr
+                            class="absolute top-[25px] left-[675px] w-[992px] h-[0px] origin-top-left rotate-90 border-2 border-dashed border-gray-950/30">
                         <div>
-
+                            <div>
+                                <h3 class="text-gray-950 text-2xl font-semibold font-['Raleway']">Select Your Seat</h3>
+                            </div>
+                            <hr class="w-[609px] h-[0px] border border-dashed border-gray-950/20 my-5">
+                            <div class="w-full h-[300px] bg-[#f7f8f8] rounded-xl p-5">
+                                <div class="flex justify-between">
+                                    <div class="flex space-x-3">
+                                        <h4 class="text-gray-950 text-base font-medium font-['Inter']">Seat </h4>
+                                        <p class="mt-1.5 text-center text-white text-xs font-bold font-['Inter'] w-[23px] h-[13px] bg-[#1dd100] rounded-[5px]">0</p>
+                                    </div>
+                                    
+                                    <h4 class="text-gray-950 text-base font-medium font-['Inter']">Class</h4>
+                                    <h4 class="text-gray-950 text-base font-medium font-['Inter']">Price</h4>
+                                </div>
+                                <hr class="w-full h-[0px] border border-gray-950/20 border-dashed my-5">
+                                <hr class="w-full h-[0px] border border-gray-950/20 my-5">
+                                <div class="flex justify-between">
+                                    <h4 class="text-gray-950 text-base font-medium font-['Inter']">Total Price</h4>
+                                    <h4 class="text-gray-950 text-base font-medium font-['Inter']">BDT</h4>
+                                </div>
+                                <div class="relative my-4">
+                                    <input type="text"
+                                        class="text-gray-950/40 text-base font-normal font-['Inter'] w-full h-16 rounded-xl border border-gray-950/10 p-4"
+                                        placeholder="Have any copupon? ">
+                                        <button class="absolute top-[12px] left-[475px] text-white text-base font-semibold font-['Inter'] w-20 h-10 bg-[#1dd100] rounded-lg">Apply</button>
+                                </div>
+                                <div class="flex justify-between">
+                                    <h4 class="text-gray-950 text-base font-medium font-['Inter']">Grand Total</h4>
+                                    <h4 class="text-gray-950 text-base font-medium font-['Inter']">BDT</h4>
+                                </div>
+                            </div>
+                            <div class="my-5 flex flex-col gap-5">
+                                <div class="flex flex-col">
+                                    <label for="" class="text-gray-950 text-base font-semibold font-['Inter'] mb-4">Passenger Name*</label>
+                                    <input type="text" placeholder="Enter your name"
+                                        class="w-full h-16 rounded-xl border border-gray-950/10 p-4" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <label for="" class="text-gray-950 text-base font-semibold font-['Inter'] mb-4">Phone Number*</label>
+                                    <input type="text" placeholder="Enter your phone number"
+                                        class="w-full h-16 rounded-xl border border-gray-950/10 p-4" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <label for="" class="text-gray-950 text-base font-semibold font-['Inter'] mb-4">Email ID</label>
+                                    <input type="text" placeholder="Enter your email id"
+                                        class="w-full h-16 rounded-xl border border-gray-950/10 p-4" />
+                                </div>
+                                <button class="text-center text-white text-xl font-extrabold font-['Raleway'] w-full h-[65px] px-[30px] py-[21px] bg-[#1dd100] rounded-2xl justify-center items-center gap-2.5 inline-flex">Next</button>
+                                <div class="flex justify-between">
+                                    <a class="underline" href="#">Terms and Conditions</a>
+                                    <a class="underline" href="#">Cancellation Policy</a>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
