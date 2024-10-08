@@ -1,4 +1,4 @@
-document.getElementById('scrollBtn').addEventListener('click', function() {
+document.getElementById('scrollBtn').addEventListener('click', function () {
     document.getElementById('section1').scrollIntoView({ behavior: 'smooth' });
 });
 
@@ -13,24 +13,24 @@ for (const btn of allBtn) {
         const selectedContainer = document.getElementById("selected-seat-container");
 
         event.target.setAttribute("disabled", false);
-        
 
-//update cartCount
 
-const firstCartCount = getConvertedValue("cart");
-if(firstCartCount + 1 > 4){
-    alert("limit is end");
-    return;
-}
-event.target.style.backgroundColor = "#1dd100";
+        //update cartCount
 
-event.target.style.color = "white";
+        const firstCartCount = getConvertedValue("cart");
+        if (firstCartCount + 1 > 4) {
+            alert("limit is end");
+            return;
+        }
+        event.target.style.backgroundColor = "#1dd100";
 
-const cartCount = getConvertedValue("cart");
-document.getElementById("cart").innerText = cartCount + 1;
+        event.target.style.color = "white";
 
-const leftCount = getConvertedValue("left");
-document.getElementById("left").innerText = leftCount - 1;
+        const cartCount = getConvertedValue("cart");
+        document.getElementById("cart").innerText = cartCount + 1;
+
+        const leftCount = getConvertedValue("left");
+        document.getElementById("left").innerText = leftCount - 1;
 
 
         const div = document.createElement("div");
@@ -91,50 +91,91 @@ function updateTotalCost(price) {
 
 //next button disable
 
-// Get seat buttons, phone number input, and next button
-const seatButtons = document.getElementsByClassName("add-btn");
-const phoneNum = document.getElementsByClassName("phone-num")[0]; // Select the first phone number input
-const nextButton = document.getElementsByClassName("next-btn")[0]; // Select the first button with the 'next-btn' class
-const phoneNumTextElement = document.getElementsByClassName("phone-num-text")[0]; // Select the element for displaying phone number text
+// const liCollection = document.getElementsByTagName('li');
+// for (const li of liCollection){
+//     console.log(li.innerText);
+// }
+// const allHeadings = document.getElementsByTagName('h1');
+// for(const h1 of allHeadings){
+//     console.log(h1.innerText);
+// }
 
-let seatSelected = false;
-let phoneNumEntered = false;
+// const name = document.getElementById('nextBtn').innerText = 'My Tour';
+// console.log(name);
+// const first = document.getElementById('nextBtn')
+// first.innerText = 'get my gun';
 
-// Disable the "Next" button initially
-nextButton.disabled = true;
-nextButton.style.opacity = 0.5;
+// const names = document.getElementsByClassName('phone-num-text');
+// for(const name of names){
+//     console.log(name.innerText);
+// }
 
-// Function to check if both conditions are met
-function checkBtn() {
-    if (seatSelected && phoneNumEntered) {
-        nextButton.disabled = false;
-        nextButton.style.opacity = 1;
-    } else {
-        nextButton.disabled = true;
-        nextButton.style.opacity = 0.5;
-    }
-}
+// const first = document.querySelectorAll('#nextBtn')
+// console.log(first);
 
-// Add click event listener to each seat button
-for (let i = 0; i < seatButtons.length; i++) {
-    seatButtons[i].addEventListener('click', function () {
-        seatSelected = true;
-        checkBtn(); // Check if the button can be enabled
-    });
-}
+// const second = document.querySelectorAll('.next-btn')
+// console.log(second);
 
-// Add input event listener for the phone number input
-phoneNum.addEventListener('input', function () {
-    const phoneNumText = phoneNum.value.trim(); // Trim the input value
-    if (phoneNumText !== "") {
-        // Set the trimmed phone number text
-        phoneNumTextElement.innerText = phoneNumText;
-        phoneNumEntered = true;
-    } else {
-        phoneNumEntered = false;
-    }
-    checkBtn(); // Check if the button can be enabled
-});
+// const allLi = document.querySelectorAll('.li li')
+// for (const li of allLi){
+//     console.log(li.innerText);
+// }
+
+// const li = document.querySelector('.li li')
+// console.log(li.innerText);
+
+// const first = document.getElementsByClassName('li');
+// console.log(first);
+// const second = document.getElementsByClassName('li')[0].innerHTML;
+// console.log(second);
+// const him = first.getAttribute('class');
+// console.log(him);
+
+// console.log(first.classList.remove('next-btn'));
+// console.log(first.classList.add('purple-me'));
+// console.log(first.classList);
+
+// const him = first.setAttribute('first', 'tootip set by Javascript');
+// console.log(him);
+
+// const sections = document.querySelectorAll('section');
+// for(const section of sections){
+//     section.style.border = '2px solid red';
+//     section.style.marginBottom = '5px';
+//     section.style.borderRadius = '5px';
+//     section.style.paddingLeft = '7px';
+//     section.style.backgroundColor = 'lightgray';
+
+// }
+
+// const place = document.getElementById('nextBtn');
+// // place.style.backgroundColor = 'yellow';
+// place.classList.add('bg-red-700');
+// place.classList.remove('bg-red-700');
+
+// const place = document.getElementById('li');
+// console.log(place.childNodes[1].childNodes[3].previousSibling);
+
+const placeUl = document.querySelectorAll('#li ul');
+console.log(placeUl.parentNode.parentNode);
+
+const place = document.createElement('li');
+const him = li.innerText = 'Brand New';
+// console.log(li);
+
+const addSome = placeUl.appendChild(li);
+
+const li2 = document.createElement('li');
+li2.innerText = 'another dynamic li';
+placeUl.appendChild(li2);
+
+
+
+
+
+
+
+
 
 
 // formula of parseInt
