@@ -56,6 +56,11 @@ for (const btn of allBtn) {
     })
 }
 
+document.getElementById('btn-delete').addEventListener('click', function(){
+    const secret = document.getElementById('secret-info');
+    secret.style.display = 'none';
+})
+
 function updateGrandTotal(status) {
     const totalCost = getConvertedValue("total-cost");
     if (status == undefined) {
