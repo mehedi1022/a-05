@@ -56,10 +56,7 @@ for (const btn of allBtn) {
     })
 }
 
-document.getElementById('btn-delete').addEventListener('click', function(){
-    const secret = document.getElementById('secret-info');
-    secret.style.display = 'none';
-})
+
 
 function updateGrandTotal(status) {
     const totalCost = getConvertedValue("total-cost");
@@ -70,14 +67,22 @@ function updateGrandTotal(status) {
         const couponCode = document.getElementById("coupon-code").value;
         let discounted;
         if (couponCode == "NEW15" || couponCode == "Couple 20") {
+
             if (couponCode == "NEW15") {
                 discounted = totalCost * .15;
             } else {
                 discounted = totalCost * .2;
             }
+
+            document.getElementById('btn-delete').addEventListener('click', function () {
+                const secret = document.getElementById('secret-info');
+                secret.style.display = 'none';
+            })
+
             document.getElementById("grand-total").innerText = totalCost - discounted;
         } else {
             alert("Please enter valid coupon code");
+            return;
         }
     }
 
