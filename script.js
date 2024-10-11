@@ -4,6 +4,24 @@ document.getElementById('scrollBtn').addEventListener('click', function () {
 
 const allBtn = document.getElementsByClassName("add-btn");
 
+const phone = document.getElementById('phoneNumber');
+const next = document.getElementById('nextBtn');
+
+let seatSelect = false;
+let phoneEnter = false;
+
+function checkNext() {
+    if (seatSelect && phoneEnter) {
+        next.removeAttribute('disabled');
+        next.style.opacity = 1;
+    } else {
+        next.setAttribute('disabled', true);
+        next.style.opacity = 0.5;
+    }
+}
+
+
+
 for (const btn of allBtn) {
     btn.addEventListener("click", function (event) {
         const seat = event.target.parentNode.innerText;
@@ -67,19 +85,24 @@ for (const btn of allBtn) {
 
         // next button disable
 
-        const phone = document.getElementById('phoneNumber');
-        const next = document.getElementById('nextBtn');
-
         if (firstCartCount + 1 > 0) {
-            console.log("do the work");
-            next.removeAttribute('disabled');
-
+            seatSelect = true;
         } else {
-            next.setAttribute('disabled', true);
-
+            seatSelect = false;
         }
-    })
+        checkNext();
+    });
 }
+
+phone.addEventListener('input', function () {
+    
+    if (phone.value !== '') {
+        phoneEnter = true;
+    } else {
+        phoneEnter = false;
+    }
+    checkNext(); 
+});
 
 
 function updateGrandTotal(status) {
