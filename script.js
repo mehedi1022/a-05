@@ -64,6 +64,20 @@ for (const btn of allBtn) {
             deleteButton.setAttribute('disabled', true);
             deleteButton.style.opacity = 0.5;
         }
+
+        // next button disable
+
+        const phone = document.getElementById('phoneNumber');
+        const next = document.getElementById('nextBtn');
+
+        if (firstCartCount + 1 > 0) {
+            console.log("do the work");
+            next.removeAttribute('disabled');
+
+        } else {
+            next.setAttribute('disabled', true);
+
+        }
     })
 }
 
@@ -109,6 +123,7 @@ function updateTotalCost(price) {
     document.getElementById("total-cost").innerText = sum;
 
 }
+
 
 
 
