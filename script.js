@@ -76,10 +76,10 @@ function updateGrandTotal(status) {
             } else {
                 discounted = totalCost * .2;
             }
-            document.getElementById('btn-delete').addEventListener('click', function(){
+            
                 const secret = document.getElementById('secret-info');
                 secret.style.display = 'none';
-            })
+           
 
 
             document.getElementById("grand-total").innerText = totalCost - discounted;
