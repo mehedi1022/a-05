@@ -53,13 +53,20 @@ for (const btn of allBtn) {
 
         updateTotalCost(price);
         updateGrandTotal();
+
+
+        //coupon code disable
+        const deleteButton = document.getElementById('btn-delete');
+        if (firstCartCount + 1 === 4) {
+            deleteButton.removeAttribute('disabled');
+            deleteButton.style.opacity = 1;
+        } else {
+            deleteButton.setAttribute('disabled', true);
+            deleteButton.style.opacity = 0.5;
+        }
     })
 }
 
-// document.getElementById('btn-delete').addEventListener('click', function(){
-//     const secret = document.getElementById('secret-info');
-//     secret.style.display = 'none';
-// })
 
 function updateGrandTotal(status) {
     const totalCost = getConvertedValue("total-cost");
@@ -79,7 +86,7 @@ function updateGrandTotal(status) {
 
             const secret = document.getElementById('secret-info');
             secret.style.display = 'none';
-            
+
             document.getElementById("discounted-div").style.display = 'block';
             document.getElementById("discount-price").innerText = discounted;
 
