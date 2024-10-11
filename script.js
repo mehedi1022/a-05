@@ -76,16 +76,17 @@ function updateGrandTotal(status) {
             } else {
                 discounted = totalCost * .2;
             }
-            
-                const secret = document.getElementById('secret-info');
-                secret.style.display = 'none';
-           
 
+            const secret = document.getElementById('secret-info');
+            secret.style.display = 'none';
+            
+            document.getElementById("discounted-div").style.display = 'block';
+            document.getElementById("discount-price").innerText = discounted;
 
             document.getElementById("grand-total").innerText = totalCost - discounted;
         } else {
             alert("Please enter valid coupon code");
-            
+
         }
     }
 
